@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6061717847614834053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f169759e6c7d24eab50419c19c6169, type: 3}
+  m_Name: Restart
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 312, y: 248}
+  ports:
+    keys:
+    - PreviousNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -6061717847614834053}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: DefaultReaction
+        node: {fileID: 2201011305709357759}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37100fe2555db9439abdb7b411af179, type: 3}
+  m_Name: DefaultGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2201011305709357759}
+  - {fileID: 8042214060913726108}
+  - {fileID: -6061717847614834053}
+  EventStarter: {fileID: 2201011305709357759}
+  CurrentlyActiveEvent: {fileID: 2201011305709357759}
+  Interactable: {fileID: 0}
+--- !u!114 &2201011305709357759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae93433a0dcf114cace56ad684a9ae2, type: 3}
+  m_Name: Start Interactable
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 13.549994, y: 37.15}
+  ports:
+    keys:
+    - Initialize
+    - Take
+    - Talk
+    - LookAt
+    - Gnaw
+    - ReactToInventoryItem
+    - DefaultReaction
+    values:
+    - _fieldName: Initialize
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 8042214060913726108}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Take
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Talk
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: LookAt
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Gnaw
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: ReactToInventoryItem
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: DefaultReaction
+      _node: {fileID: 2201011305709357759}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -6061717847614834053}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  Category: 0
+--- !u!114 &8042214060913726108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f169759e6c7d24eab50419c19c6169, type: 3}
+  m_Name: Restart
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 296, y: -24}
+  ports:
+    keys:
+    - PreviousNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 8042214060913726108}
+      _typeQualifiedName: EventNode+Empty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Initialize
+        node: {fileID: 2201011305709357759}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0

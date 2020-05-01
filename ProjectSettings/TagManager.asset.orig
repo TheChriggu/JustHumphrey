@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+<<<<<<< working copy
+  - name: New Layer
+    uniqueID: 923445673
+=======
+  - name: Background
+    uniqueID: 3849148853
+    locked: 0
+  - name: Deko1
+    uniqueID: 58203735
+    locked: 0
+  - name: Deko2
+    uniqueID: 2777016937
+    locked: 0
+  - name: Interactables
+    uniqueID: 1722790511
+    locked: 0
+  - name: Souvenirs
+    uniqueID: 125633765
+    locked: 0
+  - name: Interactables2
+    uniqueID: 2646443885
+    locked: 0
+  - name: NPCs
+    uniqueID: 2508202161
+    locked: 0
+  - name: Humphrey
+    uniqueID: 3466696031
+    locked: 0
+  - name: UI
+    uniqueID: 3505438571
+    locked: 0
+  - name: Light
+    uniqueID: 3900981937
+>>>>>>> merge rev
+    locked: 0
